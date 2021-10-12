@@ -1,0 +1,58 @@
+.editor_content{
+  position: relative;
+  display: inline-block;
+  width: auto;
+  height: 100%;
+  .upload_content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  :global{
+    #audio{
+      position:absolute;
+      left:0;
+      top:0;
+      width:40px;
+      height:40px;
+      opacity:0;
+      cursor: pointer;
+    }
+    .w-e-text p, .w-e-text h1, .w-e-text h2, .w-e-text h3, .w-e-text h4, .w-e-text h5, .w-e-text table, .w-e-text pre{
+      margin:inherit;
+      line-height: inherit;
+    }
+    .w-e-toolbar p, .w-e-text-container p, .w-e-menu-panel p{
+      font-size: inherit!important;
+    }
+    // .w-e-text table td, .w-e-text table th{
+    //   border-bottom: inherit;
+    //   border-right: inherit;
+    //   padding: inherit;
+    //   min-height: inherit;
+    // }
+    // .w-e-text table{
+    //   border-top: inherit;
+    //   border-left: inherit;
+    // }
+    .w-e-text-container{
+      flex-shrink: 0;
+    }
+    .w-e-text-container{
+      flex: 1;
+      overflow-y: auto;
+    }
+    .w-e-text-container .placeholder{
+      top: 0;
+    }
+    .w-e-menu:nth-child(20){
+      display: none;
+    }
+    .w-e-menu:nth-child(21){
+      display: none;
+    }
+  }
+}
